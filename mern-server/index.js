@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 //  ------------ MONGODB Configuration --------------- //
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://MERN-Book-Store:MV12DwPENB4Ev4Im@cluster0.au9jlsp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -35,6 +35,64 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
+
+
+    // --- Create a Collection for the Database
+    const bookCollections = client.db("BookInventory").collection("books");
+
+    // --- Inserting a Single Book to the DB using POST Method
+    app.post("/upload-book", async(req,res) => {
+      const data = req.body;
+      const result = await bookCollections.insertOne(data)
+      res.send(result);
+    })
+
+    // --- Get all books from the database using GET Method
+    // app.get("/all-books", async(req,res) => {
+    //   const books = bookCollections.find();
+    //   const result = await books.toArray();
+    //   res.send(result);
+    // })
+
+    // --- Find Books by Category
+    app.get("/all-books", async(req,res) => {
+      let query = {};
+      if (req.query?.category){
+        query = {category: req.query.category}
+      }
+      const result = await bookCollections.find(query).toArray();
+      res.send(result)
+    })
+
+    // --- Update Book Data using UPDATE method - uses the id
+    app.patch("/book/:id", async(req,res) => {
+      const id = req.params.id
+      const updateBookData = req.body;
+      // const filter = {_id: id };
+      const filter = {_id: new ObjectId(id)};
+      const options = {upsert: true};
+
+      const updateBook = {
+        $set:{
+          ...updateBookData
+        }
+      }
+
+      //Update - Just need to give which data to change/update
+      const result = await bookCollections.updateOne(filter, updateBook, options)
+      res.send(result)
+    })
+
+    // --- Delete A Book using the ID
+    app.delete("/book/:id", async(req,res) => {
+      const id = req.params.id
+      // const filter = {_id: id };
+      const filter = {_id: new ObjectId(id)};
+
+      const result = await bookCollections.deleteOne(filter);
+      res.send(result);
+    })
+
 
 
     // Send a ping to confirm a successful connection

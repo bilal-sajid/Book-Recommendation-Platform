@@ -3,6 +3,7 @@ import Banner from '../components/Banner'
 import BestSellerBooks from './BestSellerBooks'
 import FavouriteBooks from './Favouritebooks'
 import PromoBanner from './PromoBanner'
+import OtherBooks from './OtherBooks'
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <BestSellerBooks/>
       <FavouriteBooks/>
       <PromoBanner/>
+      <OtherBooks/>
     </div>
   )
 }

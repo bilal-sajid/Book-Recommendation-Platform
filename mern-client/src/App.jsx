@@ -4,14 +4,21 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import FooterComp from './components/FooterComp'
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <Navbar/>
-    <Outlet/>
+    <Navbar />
+
+    <div className='min-h-screen'>
+      <Outlet/>
+    </div>
+    
+    <FooterComp/>
     </>
   )
 }

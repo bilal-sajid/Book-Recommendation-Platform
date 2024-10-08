@@ -27,11 +27,44 @@ const UploadBook = () => {
     setSelectedBookCategory(event.target.value)
   }
 
+  //Handle Submission
+  const handleBookSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+
+    const authorName = form.authorName.value
+    const imageURL = form.imageURL.value
+    const category = form.categoryName.value
+    const description = form.description.value
+    const title = form.title.value;
+    const pdfURL = form.pdfURL.value
+
+    const bookObject = {
+      authorName,imageURL,category,description,title,pdfURL
+    }
+
+    // console.log(bookObject)
+
+    // Send Data to Database
+    fetch("http://localhost:3000/upload-book", {
+      method: "POST",
+      headers:{
+        "Content-Type":"application/json",
+      },
+      body:JSON.stringify(bookObject)
+    }).then(res => res.json()).then(data=>{
+      alert("Book has been Uploaded Successfully!")
+
+      form.reset();
+    })
+
+    }
+
   return (
     <div className='px-4 my-12'>
       <h2 className='mb-8 text-3xl font-bold'> Upload a Book</h2>
 
-      <form className="flex lg:w-[1180px] flex-col flex-wrap gap-4">
+      <form onSubmit={handleBookSubmit} className="flex lg:w-[1180px] flex-col flex-wrap gap-4">
 
         
         {/* First Row */}
@@ -92,9 +125,21 @@ const UploadBook = () => {
 
         </div>
 
+
+        {/* Book PDF Link */}
+        <div>
+        <div className="mb-2 block">
+          <Label htmlFor="pdfURL" value="Book PDF URL" />
+        </div>
+        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Book PDF URL" required />
+      </div>
+
+      {/* Button */}
+      <Button type="submit" className='mt-5'>Upload Book</Button>
+
     </form>
     </div>
   )
 }
 
-export default UploadBook
+export default UploadBook 

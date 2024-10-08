@@ -1,12 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import { Link } from 'react-router-dom';
 
 // React Icons
 import {FaBarsStaggered, FaBlog, FaXmark} from "react-icons/fa6";
+import { AuthContext } from '../contexts/AuthProvider';
 
 const Navbar = () => {
     const [isMenuOpen,setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+
+    const {user} = useContext(AuthContext)
+    
 
     // Toggle Menu
     const toggleMenu = () => {

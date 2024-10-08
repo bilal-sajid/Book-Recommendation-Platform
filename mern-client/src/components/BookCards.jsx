@@ -17,7 +17,7 @@ import { Pagination } from 'swiper/modules';
 
 
 const BookCards = ({headline, books}) => {
-    console.log(books)
+    // console.log(books)
   return (
     <div className='my-16 px-4 lg:px-24 '>
         <h2 className='text-5xl text-center font-bold text-black my-5'>{headline}</h2>

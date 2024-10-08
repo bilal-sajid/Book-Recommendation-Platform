@@ -1,17 +1,43 @@
-import React, { useEffect, useState } from 'react'
-import BookCards from '../components/BookCards'
+import React from 'react'
+import FavBookImage from "../assets/FavouriteBooks.png"
+import { Link } from 'react-router-dom';
 
 const FavouriteBooks = () => {
-    const [books, setBooks] = useState([])
-
-    useEffect( () => {
-
-      // Simply Slicing the first 6 Books
-        fetch("http://localhost:3000/all-books").then(res => res.json()).then(data => setBooks(data.slice(0,7)))
-    },[])
-
   return (
-    <BookCards books = {books} headline="Best Sellers"/>
+    <div className='px-4 lg:px-24 my-20 flex flex-col md:flex-row justify-between items-center gap-12'>
+      <div className='md:w-1/2'>
+        <img src={FavBookImage} alt="" className='rounded md:w-10/12'/>
+      </div>
+
+      <div className='md:w-1/2 space-y-6'>
+        <h2 className='text-5xl font-bold my-5 md:w-3/4 leading-snug'>Find Your Favourite <span className='text-blue-700'>Book Here</span></h2>
+        <p className='mb-10 text-lg md:w-5/6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto voluptates fuga accusamus, fugiat totam, tempora labore, autem quaerat consequatur facilis nemo veniam? Vero vel, nihil placeat modi quos rem!</p>
+
+        {/* {Website Stats} */}
+        <div className='flex flex-col sm:flex-row justify-between gap-6 md:w-3/4 my-14'>
+
+          <div>
+            <h3 className='text-3xl font-bold'>800+</h3>
+            <p className='text-base'>Book Listings</p>
+          </div>
+
+          <div>
+            <h3 className='text-3xl font-bold'>550+</h3>
+            <p className='text-base'>Register Users</p>
+          </div>
+
+          <div>
+            <h3 className='text-3xl font-bold'>1200+</h3>
+            <p className='text-base'>PDF Downloads</p>
+          </div>
+
+        </div>
+
+        {/* {Button} */}
+        <Link to="/shop" className='mt-12 block'><button className='bg-blue-700 text-white font-semibold px-5 py-2 rounded hover:bg-black transition-all duration-300'>Explore more</button></Link>
+
+      </div>
+    </div>
   )
 }
 

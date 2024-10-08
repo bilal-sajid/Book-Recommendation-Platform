@@ -4,6 +4,7 @@ import BestSellerBooks from './BestSellerBooks'
 import FavouriteBooks from './Favouritebooks'
 import PromoBanner from './PromoBanner'
 import OtherBooks from './OtherBooks'
+import Reviews from './Reviews'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <FavouriteBooks/>
       <PromoBanner/>
       <OtherBooks/>
+      <Reviews/>
     </div>
   )
 }

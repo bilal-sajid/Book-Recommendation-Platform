@@ -41,4 +41,4 @@ const FavouriteBooks = () => {
   )
 }
 
-export default FavouriteBooks
+export default FavouriteBooks;

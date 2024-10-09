@@ -1,29 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import BookCards from '../components/BookCards';
-import axios from 'axios';
-
-const backendUrl = process.env.REACT_APP_BACKEND_URL;
+import React, { useEffect, useState } from 'react'
+import BookCards from '../components/BookCards'
 
 const BestSellerBooks = () => {
-  const [books, setBooks] = useState([]);
+    const [books, setBooks] = useState([])
 
-  useEffect(() => {
-    // Getting Random 10 Books
-    axios.get(`${backendUrl}/all-books`)
-      .then(res => {
+    useEffect( () => {
+
+      // Getting Random 10 Books
+      fetch("http://localhost:3000/all-books")
+      .then(res => res.json())
+      .then(data => {
         // Shuffle the array randomly
-        const shuffledBooks = res.data.sort(() => Math.random() - 0.5);
+        const shuffledBooks = data.sort(() => Math.random() - 0.5);
         // Set the first 10 books
         setBooks(shuffledBooks.slice(0, 10));
-      })
-      .catch(err => {
-        console.error('Error fetching books:', err);
-      });
-  }, []);
+      });    
+    },[])
 
   return (
-    <BookCards books={books} headline="Best Sellers" />
-  );
-};
+    <BookCards books = {books} headline="Best Sellers"/>
+  )
+}
 
-export default BestSellerBooks;
+export default BestSellerBooks

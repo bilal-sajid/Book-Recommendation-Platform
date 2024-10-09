@@ -55,6 +55,17 @@ async function run() {
       res.send(result)
     })
 
+    // Search for a Specific Book by title
+    app.get("/search", async (req, res) => {
+      const searchQuery = req.query.q;  // Get the search query from the request
+    
+      // Use a case-insensitive regex to search for books with matching titles
+      const filter = { title: { $regex: searchQuery, $options: "i" } };
+    
+      const result = await bookCollections.find(filter).toArray();
+      res.send(result);
+    });
+
     // --- Get all books from the database using GET Method
     // app.get("/all-books", async(req,res) => {
     //   const books = bookCollections.find();

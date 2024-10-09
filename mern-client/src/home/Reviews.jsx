@@ -65,8 +65,8 @@ const Reviews = () => {
                         </p>
                         <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
                     </div>
-                    <h5 className='text-lg font-medium'>Mark Ping</h5>
-                    <p className='text-base'>CEO, ABC Company</p>
+                    <h5 className='text-lg font-medium'>Anna Peterson</h5>
+                    <p className='text-base'>Founder, The Book Haven</p>
 
                 </div>
             </SwiperSlide>
@@ -83,7 +83,7 @@ const Reviews = () => {
                     {/* Text */}
                     <div className='mt-7'>
                         <p className='mb-5'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates est eligendi corrupti, at, unde doloribus dolore laboriosam modi quidem vel cumque. Saepe similique debitis dignissimos cumque ex esse eius?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium aliquam voluptas nostrum vel commodi voluptate esse facilis ab quasi. Nemo provident numquam veritatis maiores fugit velit. Quam ut minima distinctio.
                         </p>
                         <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
                     </div>
@@ -105,12 +105,12 @@ const Reviews = () => {
                     {/* Text */}
                     <div className='mt-7'>
                         <p className='mb-5'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates est eligendi corrupti, at, unde doloribus dolore laboriosam modi quidem vel cumque. Saepe similique debitis dignissimos cumque ex esse eius?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam, fugit laborum velit sint odio officiis culpa dolore repellendus vitae, pariatur quaerat quibusdam quo! Nihil iure sequi modi voluptates adipisci!
                         </p>
                         <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
                     </div>
-                    <h5 className='text-lg font-medium'>Mark Ping</h5>
-                    <p className='text-base'>CEO, ABC Company</p>
+                    <h5 className='text-lg font-medium'>Sarah Lee</h5>
+                    <p className='text-base'>Director of Marketing, XYZ Corp</p>
 
                 </div>
             </SwiperSlide>
@@ -127,12 +127,12 @@ const Reviews = () => {
                     {/* Text */}
                     <div className='mt-7'>
                         <p className='mb-5'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates est eligendi corrupti, at, unde doloribus dolore laboriosam modi quidem vel cumque. Saepe similique debitis dignissimos cumque ex esse eius?
-                        </p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis quos sed magni at velit error, similique aperiam fuga excepturi illo dolorem fugit expedita blanditiis, aliquam officiis incidunt, animi odit.
+l                       </p>
                         <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
                     </div>
-                    <h5 className='text-lg font-medium'>Mark Ping</h5>
-                    <p className='text-base'>CEO, ABC Company</p>
+                    <h5 className='text-lg font-medium'>Grace Sullivan</h5>
+                    <p className='text-base'>Chief Curator, Literary Journeys</p>
 
                 </div>
             </SwiperSlide>

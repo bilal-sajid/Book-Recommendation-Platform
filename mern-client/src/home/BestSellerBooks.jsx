@@ -6,8 +6,15 @@ const BestSellerBooks = () => {
 
     useEffect( () => {
 
-      // Simply Slicing the first 6 Books
-        fetch("http://localhost:3000/all-books").then(res => res.json()).then(data => setBooks(data.slice(0,7)))
+      // Getting Random 10 Books
+      fetch("http://localhost:3000/all-books")
+      .then(res => res.json())
+      .then(data => {
+        // Shuffle the array randomly
+        const shuffledBooks = data.sort(() => Math.random() - 0.5);
+        // Set the first 10 books
+        setBooks(shuffledBooks.slice(0, 10));
+      });    
     },[])
 
   return (

@@ -10,8 +10,8 @@ const FavouriteBooks = () => {
       </div>
 
       <div className='md:w-1/2 space-y-6'>
-        <h2 className='text-5xl font-bold my-5 md:w-3/4 leading-snug'>Find Your Favourite <span className='text-blue-700'>Book Here</span></h2>
-        <p className='mb-10 text-lg md:w-5/6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto voluptates fuga accusamus, fugiat totam, tempora labore, autem quaerat consequatur facilis nemo veniam? Vero vel, nihil placeat modi quos rem!</p>
+        <h2 className='text-5xl font-bold my-5 md:w-3/4 leading-snug'>Find Your Next <span className='text-blue-700'>Favorite Book Here!</span></h2>
+        <p className='mb-10 text-lg md:w-5/6'>Looking for your next great read? You've come to the right place! Whether you're into thrilling mysteries, heartwarming romances, or mind-bending sci-fi, we've got a book for every taste. Explore our collection of handpicked gems, bestsellers, and hidden treasures, and let your next adventure begin. Dive in and discover your new favorite book today!</p>
 
         {/* {Website Stats} */}
         <div className='flex flex-col sm:flex-row justify-between gap-6 md:w-3/4 my-14'>

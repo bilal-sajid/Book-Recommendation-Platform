@@ -22,12 +22,12 @@ const Banner = () => {
             {/* {Left Side} */}
             <div className='md:w-1/2 space-y-8 h-f'>
                 <h2 className='text-5xl font-bold leading-snug text-black'>
-                    Buy and Sell Your Books {' '}
+                Your Go-To Place for Buying and Selling Books {' '}
                     <span className='text-blue-700'>
-                        for the Best Prices
+                    at the Best Prices!
                     </span>
                 </h2>
-                <p className='md:w-4/5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum eius molestiae totam. Accusamus dolores nihil provident nam nisi delectus facere molestiae exercitationem non! Reprehenderit nulla recusandae minima repellendus incidunt!</p>
+                <p className='md:w-4/5'>At Page Turners, we’re all about making books accessible and exciting! Buy books at unbeatable prices, or sell your gently used ones to fellow book lovers. It’s simple, fun, and affordable—because we believe that every book deserves a good home. Ready to discover your next favorite read? </p>
     <div>
       <form onSubmit={handleSearch}>
         <input 

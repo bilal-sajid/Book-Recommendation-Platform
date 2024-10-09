@@ -6,7 +6,7 @@ import {Textarea } from "flowbite-react";
 const EditBooks = () => {
 
   const {id} = useParams();
-  const {authorName, imageURL, category, description, title, pdfURL} = useLoaderData();
+  const {authorName, imageURL, category, description, title, pdfURL, price} = useLoaderData();
 
   const bookCategories = [
     "Fiction",
@@ -135,6 +135,13 @@ const EditBooks = () => {
         <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Book PDF URL" required defaultValue={pdfURL}/>
       </div>
       
+        {/* Price */}
+        <div>
+        <div className="mb-2 block">
+          <Label htmlFor="price" value="Price" />
+        </div>
+        <TextInput id="price" name = "price" type="number" placeholder="$" step="0.01" defaultValue={price} required />
+      </div>
 
       {/* Button */}
       <Button type="submit" className='mt-5'>Update Book</Button>

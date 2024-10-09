@@ -16,13 +16,13 @@ function Shop() {
         {
           books.map(book => <Card className="max-w-sm">
             <img src={book.imageURL} className='h-96'/>
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white mb-1">
               <p>
                 {book.title}
               </p>
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              {book.description}
+            <p className="font-normal text-center text-gray-700 dark:text-gray-400">
+              {book.authorName}
             </p>
 
             <button className='bg-blue-700 font-semibold text-white py-1 rounded'> Buy Now (${book.price})</button>

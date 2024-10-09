@@ -3,7 +3,9 @@ import { Sidebar } from "flowbite-react";
 import { HiArrowSmRight, HiChartPie, HiInbox, HiOutlineCloudUpload, HiTable } from "react-icons/hi";
 import {AuthContext} from "../contexts/AuthProvider"
 
-const SideBar = () => {
+
+
+const SideBarComponent = () => {
 
   const {user} = useContext(AuthContext)
 
@@ -41,4 +43,4 @@ const SideBar = () => {
   )
 }
 
-export default SideBar
+export default SideBarComponent

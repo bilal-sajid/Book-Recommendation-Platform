@@ -103,14 +103,23 @@ async function run() {
     })
 
     // --- Delete A Book using the ID
-    app.delete("/book/:id", async(req,res) => {
-      const id = req.params.id
-      // const filter = {_id: id };
+    app.delete("/book/:id", async(req, res) => {
+      const id = req.params.id;
       const filter = {_id: new ObjectId(id)};
 
+      // Perform the delete operation
       const result = await bookCollections.deleteOne(filter);
-      res.send(result);
-    })
+
+      // Check if a document was deleted
+      if (result.deletedCount === 1) {
+        // If successful, fetch the updated list of all books
+        const updatedBooks = await bookCollections.find({}).toArray();
+        res.send(updatedBooks); // Send the updated books array
+      } else {
+        // If no book was deleted, send an error
+        res.status(404).send({ message: "Book not found" });
+      }
+    });
 
 
 

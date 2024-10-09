@@ -1,11 +1,8 @@
-
 require('dotenv').config();
 
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-
-
 
 const cors = require ('cors')
 
@@ -13,15 +10,12 @@ const cors = require ('cors')
 app.use(cors())
 app.use(express.json())
 
-// const axios = require('axios');
-// const api = axios.create({
-//   baseURL: process.env.REACT_APP_BACKEND_URL,
-// });
 
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 
 

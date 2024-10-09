@@ -14,10 +14,10 @@ import { Pagination } from 'swiper/modules';
 import {FaStar} from "react-icons/fa6"
 import { Avatar } from "flowbite-react";
 
-import avatarPicture1 from "../assets/avatar-images/avatarImage1.jpeg"
-import avatarPicture2 from "../assets/avatar-images/avatarImage2.jpg"
-import avatarPicture3 from "../assets/avatar-images/avatarImage3.jpg"
-import avatarPicture4 from "../assets/avatar-images/avatarImage4.jpg"
+import avatarPicture1 from "../assets/avatar_images/avatarImage1.jpeg"
+import avatarPicture2 from "../assets/avatar_images/avatarImage2.jpg"
+import avatarPicture3 from "../assets/avatar_images/avatarImage3.jpg"
+import avatarPicture4 from "../assets/avatar_images/avatarImage4.jpg"
 
 
 const Reviews = () => {

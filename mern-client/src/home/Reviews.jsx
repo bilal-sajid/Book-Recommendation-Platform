@@ -67,7 +67,7 @@ const Reviews = () => {
                         <p className='mb-5'>
                         I've been a loyal customer of Page Turners for a while now, and I couldn't be happier with my experience. The quality of the books is always top-notch—whether new or used, they’re always in great condition. Plus, the range of genres and titles is fantastic, offering something for every kind of reader. 
                         </p>
-                        <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
+                        <Avatar img={avatarPicture1} alt="" rounded className='w-10 mb-4'/>
                     </div>
                     <h5 className='text-lg font-medium'>Anna Peterson</h5>
                     <p className='text-base'>Founder, The Book Haven</p>
@@ -89,7 +89,7 @@ const Reviews = () => {
                         <p className='mb-5'>
                         Shipping is quick, and the customer service is friendly and reliable. Every time I shop here, I know I'm getting a great deal on high-quality books. Highly recommend for anyone who loves reading!
                         </p>
-                        <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
+                        <Avatar img={avatarPicture2} alt="" rounded className='w-10 mb-4'/>
                     </div>
                     <h5 className='text-lg font-medium'>Mark Ping</h5>
                     <p className='text-base'>CEO, ABC Company</p>
@@ -111,7 +111,7 @@ const Reviews = () => {
                         <p className='mb-5'>
                         The prices are fair, the service is excellent, and the shipping is fast. I can always count on them for a fantastic reading experience. Highly recommend!
                         </p>
-                        <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
+                        <Avatar img={avatarPicture3} alt="" rounded className='w-10 mb-4'/>
                     </div>
                     <h5 className='text-lg font-medium'>Sarah Lee</h5>
                     <p className='text-base'>Director of Marketing, XYZ Corp</p>
@@ -131,8 +131,9 @@ const Reviews = () => {
                     {/* Text */}
                     <div className='mt-7'>
                         <p className='mb-5'>
-                        Fast delivery, great prices, and an easy shopping experience make it my go-to place for all things books!l                       </p>
-                        <Avatar img={avatarPicture} alt="" rounded className='w-10 mb-4'/>
+                        Fast delivery, great prices, and an easy shopping experience make it my go-to place for all things books!
+                        </p>
+                        <Avatar img={avatarPicture4} alt="" rounded className='w-10 mb-4'/>
                     </div>
                     <h5 className='text-lg font-medium'>Grace Sullivan</h5>
                     <p className='text-base'>Chief Curator, Literary Journeys</p>

@@ -51,6 +51,8 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <h2 className='mb-8 text-3xl font-bold text-center mb-20'>In Order to Sell Books, You Need to Sign Up</h2>
+        
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
             <div
                 className="absolute inset-0 bg-gradient-to-r from-blue-300 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
@@ -81,7 +83,7 @@ const Signup = () => {
                     <hr/>
 
                     <div className='flex 2-full items-center flex-col mt-5 gap-3'>
-                        <button onClick={handleRegister} className='block'><img src={GoogleLogo} alt="" className='w-12 h-12 inline-block'/>Login with Google</button>
+                        <button onClick={handleRegister} className='block'><img src={GoogleLogo} alt="" className='w-12 h-12 inline-block'/>Sign Up with Google</button>
                     </div>
                 </div>
             </div>

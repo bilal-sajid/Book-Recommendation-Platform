@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import BookCards from '../components/BookCards'
 
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL;
+
 const BestSellerBooks = () => {
     const [books, setBooks] = useState([])
 
     useEffect( () => {
 
       // Getting Random 10 Books
-      fetch("http://localhost:3000/all-books")
+      fetch(`${backendUrl}/all-books`)
       .then(res => res.json())
       .then(data => {
         // Shuffle the array randomly

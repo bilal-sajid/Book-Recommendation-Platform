@@ -42,9 +42,10 @@ const EditBooks = () => {
     const description = form.description.value
     const title = form.title.value;
     const pdfURL = form.pdfURL.value
+    const price = form.price.value
 
     const updateBookObject = {
-      authorName,imageURL,category,description,title,pdfURL
+      authorName,imageURL,category,description,title,pdfURL,price
     }
 
     // Update the Book Data
@@ -133,6 +134,7 @@ const EditBooks = () => {
         </div>
         <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Book PDF URL" required defaultValue={pdfURL}/>
       </div>
+      
 
       {/* Button */}
       <Button type="submit" className='mt-5'>Update Book</Button>

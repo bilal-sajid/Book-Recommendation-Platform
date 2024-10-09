@@ -11,7 +11,7 @@ function Home() {
     <div>
       <Banner/>
       <BestSellerBooks/>
-      {/* <FavouriteBooks/> */}
+      
       <PromoBanner/>
       <OtherBooks/>
       <Reviews/>

@@ -34,14 +34,14 @@ import SearchResult from "../searchresults/SearchResult";
             path: "/shop",
             element:<Shop/>
         },
-        {
-          path: "/about",
-          element:<About/>
-        },
-        {
-          path: "/blog",
-          element:<Blog/>
-        },
+        // {
+        //   path: "/about",
+        //   element:<About/>
+        // },
+        // {
+        //   path: "/blog",
+        //   element:<Blog/>
+        // },
         {
           path: "/book/:id",
           element:<SingleBook/>,

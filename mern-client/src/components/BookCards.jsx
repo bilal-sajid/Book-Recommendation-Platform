@@ -59,11 +59,11 @@ const BookCards = ({headline, books}) => {
                         </div>
                         <div>
                             <div>
-                                <h3>{book.title}</h3>
-                                <p>{book.authorName}</p>
+                                <h3 className="text-center pt-4 pb-4 font-bold">{book.title}</h3>
+                                {/* <p>{book.authorName}</p> */}
                             </div>
                             <div>
-                                <p>${book.price}</p>
+                                {/* <p>${book.price}</p> */}
                             </div>
                         </div>
                     </Link>

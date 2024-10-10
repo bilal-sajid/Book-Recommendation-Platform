@@ -17,7 +17,7 @@ function Shop() {
         {
           books.map(book => <Card className="max-w-sm mx-auto" key={book._id}>
             <div className='flex justify-center'>
-            <Link to={`/book/${book._id}`}>
+            <Link to={`https://book-store-application-dufr.onrender.com/book/${book._id}`}>
             <img src={book.imageURL} className='h-96'/>
             </Link>
             </div>
@@ -31,7 +31,7 @@ function Shop() {
               {book.authorName}
             </p>
 
-            <Link to={`/book/${book._id}`}>
+            <Link to={`https://book-store-application-dufr.onrender.com/book/${book._id}`}>
               <div className="flex justify-center">
                 <button className="bg-blue-700 font-semibold text-white py-2 px-8 rounded-lg transform hover:scale-105 transition-all duration-300">
                   Buy Now (${book.price})

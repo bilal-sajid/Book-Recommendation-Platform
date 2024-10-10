@@ -48,12 +48,12 @@ const SideBarComponent = () => {
           </Sidebar.Item>
 
           {/* Sign In */}
-          <Sidebar.Item>
+          {/* <Sidebar.Item>
             <Link to="/login" className="flex items-center text-gray-800 hover:text-blue-600 transition-all duration-300">
               <HiArrowSmRight className="mr-3" />
               Sign In
             </Link>
-          </Sidebar.Item>
+          </Sidebar.Item> */}
 
           {/* Logous */}
           <Sidebar.Item>

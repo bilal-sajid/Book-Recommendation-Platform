@@ -60,19 +60,19 @@ import SearchResult from "../searchresults/SearchResult";
       element:<DashboardLayout/>,
       children: [
         {
-          path : "",
+          path : "/admin/dashboard",
           element: <PrivateRoute><Dashboard/></PrivateRoute>
         },
         {
-          path : "/upload",
+          path : "/admin/dashboard/upload",
           element: <UploadBook/>
         },
         {
-          path : "/manage",
+          path : "/admin/dashboard/manage",
           element: <ManageBooks/>
         },
         {
-          path : "/edit-books/:id",
+          path : "/admin/dashboard/edit-books/:id",
           element: <EditBooks/>,
           loader:({params}) => fetch(`http://localhost:4000/book/${params.id}`)
         },

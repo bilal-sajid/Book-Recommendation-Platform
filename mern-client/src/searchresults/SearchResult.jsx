@@ -14,7 +14,7 @@ const SearchResult = () => {
     // Fetch books based on the search query
     const fetchBooks = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/search?q=${searchQuery}`);
+        const response = await fetch(`https://book-store-application-dufr.onrender.com/search?q=${searchQuery}`);
         const data = await response.json();
         setBooks(data);
       } catch (error) {

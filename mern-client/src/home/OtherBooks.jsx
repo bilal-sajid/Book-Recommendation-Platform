@@ -8,7 +8,7 @@ const OtherBooks = () => {
 
     useEffect(() => {
       // Getting Random 10 Books
-      fetch("http://localhost:3000/all-books")
+      fetch("https://book-store-application-dufr.onrender.com/all-books")
       .then(res => res.json())
       .then(data => {
         // Shuffle the array randomly

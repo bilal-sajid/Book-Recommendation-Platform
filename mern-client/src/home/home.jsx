@@ -27,7 +27,6 @@ function Home() {
       <RimshaBooks/>
       <BilalBooks/>
       
-
       {/* <FavouriteBooks/> */}
       
       <PromoBanner/>

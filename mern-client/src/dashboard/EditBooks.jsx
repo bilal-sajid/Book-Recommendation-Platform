@@ -11,6 +11,7 @@ const EditBooks = () => {
   const bookCategories = [
     "Fiction",
     "Non-Fiction",
+    "Graphic Novel",
     "Mystery",
     "Sci-Fi",
     "Horror",

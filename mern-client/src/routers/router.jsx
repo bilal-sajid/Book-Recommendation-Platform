@@ -49,16 +49,16 @@ import SearchResult from "../searchresults/SearchResult";
           path: "/search",
           element: <SearchResult/>
         }
-        
       ]
     },
+
     {
       path: "/admin/dashboard",
       element:<DashboardLayout/>,
       children: [
         {
           path : "",
-          element: <PrivateRoute><Dashboard/></PrivateRoute>
+          element: <Dashboard/>//<PrivateRoute></PrivateRoute>
         },
         {
           path : "upload",

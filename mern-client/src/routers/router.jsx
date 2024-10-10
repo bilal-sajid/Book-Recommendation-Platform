@@ -49,13 +49,7 @@ import SearchResult from "../searchresults/SearchResult";
         {
           path: "/search",
           element: <SearchResult/>
-        },
-      {
-        path : "admin/dashboard/upload",
-        element: <UploadBook/>
-      },
-
-        
+        }
       ]
     },
 
@@ -67,10 +61,10 @@ import SearchResult from "../searchresults/SearchResult";
           path : "",
           element: <Dashboard/>//<PrivateRoute></PrivateRoute>
         },
-        // {
-          // path : "/upload",
-          // element: <UploadBook/>
-        // },
+        {
+          path : "/upload",
+          element: <UploadBook/>
+        },
         {
           path : "/manage",
           element: <ManageBooks/>

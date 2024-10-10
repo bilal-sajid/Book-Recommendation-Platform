@@ -11,6 +11,7 @@ import BilalBooks from './book_recommendations/BilalBooks'
 import NyleBooks from './book_recommendations/NyleBooks'
 import RimshaBooks from './book_recommendations/RimshaBooks'
 import MaryamBooks from './book_recommendations/MaryamBooks'
+import NooriyaBooks from './book_recommendations/NooriyaBooks'
 
 
 function Home() {
@@ -20,10 +21,14 @@ function Home() {
       {/* <BestSellerBooks/> */}
 
       {/* All Recommendations */}
-      <BilalBooks/>
       <NyleBooks/>
-      <RimshaBooks/>
       <MaryamBooks/>
+      <NooriyaBooks/>
+      <RimshaBooks/>
+      <BilalBooks/>
+      
+      
+      
 
       <FavouriteBooks/>
       

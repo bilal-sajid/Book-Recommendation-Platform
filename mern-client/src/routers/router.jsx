@@ -56,42 +56,32 @@ import SearchResult from "../searchresults/SearchResult";
         {
           path: "/logout",
           element: <Logout/>
-        },
+        }
+      ]
+    },
+    {
+      path: "/admin/dashboard",
+      element:<DashboardLayout/>,
+      children: [
         {
-          path: "/admin/dashboard",
-          element:<DashboardLayout/>,
+          path : "/admin/dashboard",
+          element: <PrivateRoute><Dashboard/></PrivateRoute>
         },
         {
           path : "/admin/dashboard/upload",
           element: <UploadBook/>
-        }
-        
-
+        },
+        {
+          path : "/admin/dashboard/manage",
+          element: <ManageBooks/>
+        },
+        {
+          path : "/admin/dashboard/edit-books/:id",
+          element: <EditBooks/>,
+          loader:({params}) => fetch(`http://localhost:4000/book/${params.id}`)
+        },
       ]
     },
-    // {
-    //   path: "/admin/dashboard",
-    //   element:<DashboardLayout/>,
-    //   children: [
-    //     {
-    //       path : "/admin/dashboard",
-    //       element: <PrivateRoute><Dashboard/></PrivateRoute>
-    //     },
-    //     {
-    //       path : "/admin/dashboard/upload",
-    //       element: <UploadBook/>
-    //     },
-    //     {
-    //       path : "/admin/dashboard/manage",
-    //       element: <ManageBooks/>
-    //     },
-    //     {
-    //       path : "/admin/dashboard/edit-books/:id",
-    //       element: <EditBooks/>,
-    //       loader:({params}) => fetch(`http://localhost:4000/book/${params.id}`)
-    //     },
-    //   ]
-    // },
 
   ]);
 

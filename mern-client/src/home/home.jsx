@@ -31,7 +31,7 @@ function Home() {
       
       <PromoBanner/>
       <OtherBooks/>
-      <Reviews/>
+      {/* <Reviews/> */}
     </div>
   )
 }

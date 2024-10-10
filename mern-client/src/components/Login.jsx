@@ -53,7 +53,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-        <h2 className='mb-8 text-3xl font-bold text-center mb-20'>In Order to Sell Books, You Need to Login</h2>
+        <h2 className='mb-8 text-3xl font-bold text-center mb-20 mt-20'>In Order to Sell Books, You Need to Login</h2>
 
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
             <div
@@ -76,8 +76,13 @@ const Login = () => {
                             
                             {error ? <p className='text-red-600 text-base'> Email or Password is not Correct </p>: ""}
                            
-                            <div>
+                            {/* <div>
                                 <p>If you don't have an account. Please <Link to="/sign-up" className='text-blue-700 underline'> Sign Up</Link> Here </p>
+                            </div> */}
+                            <div className="mb-5">
+                            <p className="mb-3">To log in, use the following credentials:</p>
+                            <p className="mb-2"><strong>Email:</strong> book-recommendation@gmail.com</p>
+                            <p className="mb-3"><strong>Password:</strong> books123</p>
                             </div>
                             <div className="relative">
                                 <button className="bg-blue-500 text-white rounded-md px-6 py-2">Login</button>

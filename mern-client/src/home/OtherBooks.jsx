@@ -19,7 +19,7 @@ const OtherBooks = () => {
     },[])
 
   return (
-    <BookCards books = {books} headline="Other Books"/>
+    <BookCards books = {books} headline="People are Recommending All Sorts of Books!"/>
   )
 
 }

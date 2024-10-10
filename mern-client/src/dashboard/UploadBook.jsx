@@ -47,7 +47,7 @@ const UploadBook = () => {
     // console.log(bookObject)
 
     // Send Data to Database
-    fetch("https://book-store-application-self.vercel.app//upload-book", {
+    fetch("https://book-store-application-self.vercel.app/upload-book", {
       method: "POST",
       headers:{
         "Content-Type":"application/json",

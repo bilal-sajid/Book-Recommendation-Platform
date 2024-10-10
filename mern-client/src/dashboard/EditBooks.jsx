@@ -99,7 +99,7 @@ const EditBooks = () => {
             <div className="mb-2 block">
               <Label htmlFor="imageURL" value="Book Image URL" />
             </div>
-            <TextInput id="imageURL" name = "imageURL" type="text" placeholder="Book Image URL" required defaultValue={imageURL}/>
+            <TextInput id="imageURL" name = "imageURL" type="text" placeholder="Open the Image of the Book Cover in a New Tab and then Copy the URL here" required defaultValue={imageURL}/>
           </div>
 
           {/* Category */}
@@ -122,9 +122,9 @@ const EditBooks = () => {
         {/* Book Description */}
         <div>
           <div className="mb-2 block">
-            <Label htmlFor="description" value="Write your Book Description..." />
+            <Label htmlFor="description" value="Write your Book Recommendation..." />
           </div>
-          <Textarea id="description" name ="description" placeholder="Book Description" required rows={6} className='w-full' defaultValue={description}/>
+          <Textarea id="description" name ="description" placeholder="Book Recommendation" required rows={6} className='w-full' defaultValue={description}/>
 
         </div>
 
@@ -134,7 +134,7 @@ const EditBooks = () => {
         <div className="mb-2 block">
           <Label htmlFor="pdfURL" value="Book PDF URL" />
         </div>
-        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Book PDF URL" required defaultValue={pdfURL}/>
+        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Copy the URL of the goodreads page (Example: https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone?ref=nav_sb_noss_l_5)" required defaultValue={pdfURL}/>
       </div>
       
         {/* Price

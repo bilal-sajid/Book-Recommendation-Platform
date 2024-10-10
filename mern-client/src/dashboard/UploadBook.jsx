@@ -67,6 +67,13 @@ const UploadBook = () => {
     <div className='px-4 my-12'>
       <h2 className='mb-8 text-3xl font-bold'> Upload a Book</h2>
 
+      <h6 className='mb-8 text-3xl font-semibold'>
+        Get all the information from {' '}
+        <a href="https://www.goodreads.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
+          Goodreads
+        </a>
+      </h6>
+
       <form onSubmit={handleBookSubmit} className="flex lg:w-[1180px] flex-col flex-wrap gap-4">
 
         
@@ -99,7 +106,7 @@ const UploadBook = () => {
             <div className="mb-2 block">
               <Label htmlFor="imageURL" value="Book Image URL" />
             </div>
-            <TextInput id="imageURL" name = "imageURL" type="text" placeholder="Book Image URL" required />
+            <TextInput id="imageURL" name = "imageURL" type="text" placeholder="Open the Image of the Book Cover in a New Tab and then Copy the URL here" required />
           </div>
 
           {/* Category */}
@@ -122,9 +129,9 @@ const UploadBook = () => {
         {/* Book Description */}
         <div>
           <div className="mb-2 block">
-            <Label htmlFor="description" value="Write your Book Description..." />
+            <Label htmlFor="description" value="Write your Book Recommendation..." />
           </div>
-          <Textarea id="description" name ="description" placeholder="Book Description" required rows={6} className='w-full'/>
+          <Textarea id="description" name ="description" placeholder="Book Recommendation" required rows={6} className='w-full'/>
 
         </div>
 
@@ -134,7 +141,7 @@ const UploadBook = () => {
         <div className="mb-2 block">
           <Label htmlFor="pdfURL" value="Book PDF URL" />
         </div>
-        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Book PDF URL" required />
+        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Copy the URL of the goodreads page (Example: https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone?ref=nav_sb_noss_l_5)" required />
       </div>
 
       {/* Price */}
@@ -150,7 +157,7 @@ const UploadBook = () => {
         <div className="mb-2 block">
           <Label htmlFor="uploadedBy" value="Uploaded By" />
         </div>
-        <TextInput id="uploadedBy" name = "uploadedBy" type="text" placeholder="Type in Your Name" required />
+        <TextInput id="uploadedBy" name = "uploadedBy" type="text" placeholder="Your Name" required />
       </div>
 
       {/* Button */}

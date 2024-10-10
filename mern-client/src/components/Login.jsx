@@ -92,9 +92,9 @@ const Login = () => {
 
                     <hr/>
 
-                    <div className='flex 2-full items-center flex-col mt-5 gap-3'>
+                    {/* <div className='flex 2-full items-center flex-col mt-5 gap-3'>
                         <button onClick={handleRegister} className='block'><img src={GoogleLogo} alt="" className='w-12 h-12 inline-block'/>Login with Google</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

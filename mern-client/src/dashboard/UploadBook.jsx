@@ -141,7 +141,7 @@ const UploadBook = () => {
         <div className="mb-2 block">
           <Label htmlFor="pdfURL" value="Book PDF URL" />
         </div>
-        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Copy the URL of the goodreads page (Example: https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone?ref=nav_sb_noss_l_5)" required />
+        <TextInput id="pdfURL" name = "pdfURL" type="text" placeholder="Copy the URL of the goodread's page (Example: https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone?ref=nav_sb_noss_l_5)" required />
       </div>
 
       {/* Price */}

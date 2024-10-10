@@ -78,7 +78,7 @@ import SearchResult from "../searchresults/SearchResult";
         {
           path : "/admin/dashboard/edit-books/:id",
           element: <EditBooks/>,
-          loader:({params}) => fetch(`http://localhost:4000/book/${params.id}`)
+          loader:({params}) => fetch(`https://book-store-application-dufr.onrender.com/book/${params.id}`)
         },
       ]
     },

@@ -71,7 +71,7 @@ import SearchResult from "../searchresults/SearchResult";
         {
           path : "/admin/dashboard/edit-books/:id",
           element: <EditBooks/>,
-          loader:({params}) => fetch(`/book/${params.id}`)
+          loader:({params}) => fetch(`book-store-application-self.vercel.app/book/${params.id}`)
         },
       ]
     },

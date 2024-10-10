@@ -52,8 +52,19 @@ import SearchResult from "../searchresults/SearchResult";
         {
           path: "/search",
           element: <SearchResult/>
+        },
+        {
+          path: "/sign-up",
+          element: <Signup/>
+        },
+        {
+          path: "/login",
+          element: <Login/>
+        },
+        {
+          path: "/logout",
+          element: <Logout/>
         }
-        
       ]
     },
     {
@@ -79,18 +90,7 @@ import SearchResult from "../searchresults/SearchResult";
         },
       ]
     },
-    {
-      path: "/sign-up",
-      element: <Signup/>
-    },
-    {
-      path: "/login",
-      element: <Login/>
-    },
-    {
-      path: "/logout",
-      element: <Logout/>
-    }
+
   ]);
 
   export default router;

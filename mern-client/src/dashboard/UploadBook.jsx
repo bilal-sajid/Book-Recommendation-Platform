@@ -39,9 +39,10 @@ const UploadBook = () => {
     const title = form.title.value;
     const pdfURL = form.pdfURL.value
     const price = form.price.value
+    const uploadedBy = form.uploadedBy.value
 
     const bookObject = {
-      authorName,imageURL,category,description,title,pdfURL,price
+      authorName,imageURL,category,description,title,pdfURL,price,uploadedBy
     }
 
     // console.log(bookObject)
@@ -141,6 +142,14 @@ const UploadBook = () => {
           <Label htmlFor="price" value="Price" />
         </div>
         <TextInput id="price" name = "price" type="number" placeholder="$" step="0.01" required />
+      </div>
+
+      {/* Uploaded By*/}
+      <div>
+        <div className="mb-2 block">
+          <Label htmlFor="uploadedBy" value="Uploaded By" />
+        </div>
+        <TextInput id="uploadedBy" name = "uploadedBy" type="text" placeholder="Type in Your Name" required />
       </div>
 
       {/* Button */}

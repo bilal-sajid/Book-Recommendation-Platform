@@ -17,7 +17,8 @@ const SideBarComponent = () => {
 
       {/* imgAlt="Flowbite logo"> */}
         {
-          user?.displayName || "Demo User"
+          "Back To Home"
+          // user?.displayName || "Demo User"
         }
     </Sidebar.Logo>
 

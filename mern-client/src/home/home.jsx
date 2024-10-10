@@ -6,9 +6,12 @@ import FavouriteBooks from './FavouriteBooks'
 import PromoBanner from './PromoBanner'
 import OtherBooks from './OtherBooks'
 import Reviews from './Reviews'
+
 import BilalBooks from './book_recommendations/BilalBooks'
 import NyleBooks from './book_recommendations/NyleBooks'
-// 
+import RimshaBooks from './book_recommendations/RimshaBooks'
+
+
 function Home() {
   return (
     <div>
@@ -18,7 +21,8 @@ function Home() {
       {/* All Recommendations */}
       <BilalBooks/>
       <NyleBooks/>
-      
+      <RimshaBooks/>
+
       <FavouriteBooks/>
       
       <PromoBanner/>

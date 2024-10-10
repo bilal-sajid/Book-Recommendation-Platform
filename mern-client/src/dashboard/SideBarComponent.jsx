@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Sidebar } from "flowbite-react";
-import { HiArrowSmRight, HiChartPie, HiInbox, HiOutlineCloudUpload, HiTable } from "react-icons/hi";
+import { HiArrowSmRight, HiChartPie, HiHome, HiInbox, HiOutlineCloudUpload, HiTable } from "react-icons/hi";
 import {AuthContext} from "../contexts/AuthProvider"
 import { Link } from 'react-router-dom';
 
@@ -13,13 +13,11 @@ const SideBarComponent = () => {
   return (
     <Sidebar aria-label="Sidebar with content separator example">
     
-    <Sidebar.Logo href="/" img={user?.photoURL}> 
-
-      {/* imgAlt="Flowbite logo"> */}
-        {
-          "Back To Home"
-          // user?.displayName || "Demo User"
-        }
+    <Sidebar.Logo>
+      <Link to="/" className="flex items-center text-gray-800 hover:text-blue-600 transition-all duration-300">
+        <HiHome className="mr-2 text-2xl" />
+        <span className="font-semibold">Back To Home</span>
+      </Link>
     </Sidebar.Logo>
 
       <Sidebar.Items>

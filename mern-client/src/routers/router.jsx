@@ -80,15 +80,15 @@ import SearchResult from "../searchresults/SearchResult";
       ]
     },
     {
-      path: "sign-up",
+      path: "/sign-up",
       element: <Signup/>
     },
     {
-      path: "login",
+      path: "/login",
       element: <Login/>
     },
     {
-      path: "logout",
+      path: "/logout",
       element: <Logout/>
     }
   ]);

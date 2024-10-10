@@ -49,7 +49,7 @@ const EditBooks = () => {
     }
 
     // Update the Book Data
-    fetch(`http://localhost:3000/book/${id}`, {
+    fetch(`https://book-store-application-self.vercel.app/book/${id}`, {
       method:"PATCH",
       headers:{
         "Content-Type":"application/json"

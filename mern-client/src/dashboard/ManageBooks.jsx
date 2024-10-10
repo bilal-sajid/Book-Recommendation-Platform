@@ -36,7 +36,7 @@ const ManageBooks = () => {
           <Table.HeadCell>Book Name</Table.HeadCell>
           <Table.HeadCell>Author Name</Table.HeadCell>
           <Table.HeadCell>Category</Table.HeadCell>
-          <Table.HeadCell>Price</Table.HeadCell>
+          <Table.HeadCell>Uploaded By</Table.HeadCell>
           <Table.HeadCell>
             <span>Edit or Manage</span>
           </Table.HeadCell>
@@ -53,7 +53,7 @@ const ManageBooks = () => {
             </Table.Cell>
             <Table.Cell>{book.authorName}</Table.Cell>
             <Table.Cell>{book.category}</Table.Cell>
-            <Table.Cell>${book.price}</Table.Cell>
+            <Table.Cell>{book.uploadedBy}</Table.Cell>
             <Table.Cell>
               <Link to={`/admin/dashboard/edit-books/${book._id}`} className="font-medium text-cyan-600 hover:underline dark:text-cyan-500 mr-5">
                 Edit

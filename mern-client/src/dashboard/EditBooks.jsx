@@ -51,7 +51,7 @@ const EditBooks = () => {
     }
 
     // Update the Book Data
-    fetch(`http://localhost:4000/book/${id}`, {
+    fetch(`https://book-store-application-dufr.onrender.com/book/${id}`, {
       method:"PATCH",
       headers:{
         "Content-Type":"application/json"

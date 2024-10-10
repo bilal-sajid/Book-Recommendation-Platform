@@ -42,7 +42,7 @@ const UploadBook = () => {
     const uploadedBy = form.uploadedBy.value
 
     const bookObject = {
-      authorName,imageURL,category,description,title,pdfURL,price,uploadedBy
+      authorName,imageURL,category,description,title,pdfURL,uploadedBy
     }
 
     // console.log(bookObject)
@@ -137,12 +137,12 @@ const UploadBook = () => {
       </div>
 
       {/* Price */}
-      <div>
+      {/* <div>
         <div className="mb-2 block">
           <Label htmlFor="price" value="Price" />
         </div>
         <TextInput id="price" name = "price" type="number" placeholder="$" step="0.01" required />
-      </div>
+      </div> */}
 
       {/* Uploaded By*/}
       <div>

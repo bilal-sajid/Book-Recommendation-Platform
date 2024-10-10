@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import BookCards from '../components/BookCards'
+import BookCards from '../../components/BookCards'
 
-const BestSellerBooks = () => {
+
+const BilalBooks = () => {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
@@ -17,8 +18,8 @@ const BestSellerBooks = () => {
     }, [])
 
   return (
-    <BookCards books={books} headline="Best Sellers" />
+    <BookCards books={books} headline="Bilal's Recommendations" />
   )
 }
 
-export default BestSellerBooks
+export default BilalBooks

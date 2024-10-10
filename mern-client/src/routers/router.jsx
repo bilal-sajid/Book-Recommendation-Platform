@@ -20,6 +20,7 @@ import SearchResult from "../searchresults/SearchResult";
 
 
   const router = createBrowserRouter([
+    
     {
       path: "/",
       element: <App/>,
@@ -48,7 +49,13 @@ import SearchResult from "../searchresults/SearchResult";
         {
           path: "/search",
           element: <SearchResult/>
-        }
+        },
+      {
+        path : "admin/dashboard/upload",
+        element: <UploadBook/>
+      },
+
+        
       ]
     },
 
@@ -60,19 +67,19 @@ import SearchResult from "../searchresults/SearchResult";
           path : "",
           element: <Dashboard/>//<PrivateRoute></PrivateRoute>
         },
+        // {
+          // path : "/upload",
+          // element: <UploadBook/>
+        // },
         {
-          path : "upload",
-          element: <UploadBook/>
-        },
-        {
-          path : "manage",
+          path : "/manage",
           element: <ManageBooks/>
         },
         {
-          path : "edit-books/:id",
+          path : "/edit-books/:id",
           element: <EditBooks/>,
           loader:({params}) => fetch(`book-store-application-self.vercel.app/book/${params.id}`)
-        },
+        }
       ]
     },
     {
@@ -87,6 +94,7 @@ import SearchResult from "../searchresults/SearchResult";
       path: "logout",
       element: <Logout/>
     }
+  
   ]);
 
   export default router;

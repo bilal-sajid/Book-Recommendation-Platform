@@ -52,9 +52,9 @@ const SearchResult = () => {
 
           <Link to={`/book/${book._id}`}>
             <div className="flex justify-center">
-              <button className="bg-blue-700 font-semibold text-white py-2 px-8 rounded-lg transform hover:scale-105 transition-all duration-300">
-                Buy Now (${book.price})
-              </button>
+            <button className="bg-blue-700 font-semibold text-white py-2 px-8 rounded-lg transform hover:scale-105 transition-all duration-300">
+                  Recommended By {book.uploadedBy}
+                </button>
             </div>
           </Link>
           
@@ -62,7 +62,7 @@ const SearchResult = () => {
       }
     </div>
       ) : (
-        <h2 className='text-5xl font-semi-bold text-center mt-16'> No Results </h2>
+        <h2 className='text-5xl font-semi-bold text-center mt-16'> No One Has Recommended This Book Yet</h2>
       )}
 
     </div>

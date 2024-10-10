@@ -22,12 +22,14 @@ const Banner = () => {
             {/* {Left Side} */}
             <div className='md:w-1/2 space-y-8 h-f'>
                 <h2 className='text-5xl font-bold leading-snug text-black'>
-                Your Go-To Place for Buying and Selling Books {' '}
+                Share Your Favorite Reads {' '}
                     <span className='text-blue-700'>
-                    at the Best Prices!
+                    and Why You Love Them!
                     </span>
                 </h2>
-                <p className='md:w-4/5'>At Page Turners, we’re all about making books accessible and exciting! Buy books at unbeatable prices, or sell your gently used ones to fellow book lovers. It’s simple, fun, and affordable—because we believe that every book deserves a good home. Ready to discover your next favorite read? </p>
+                <p className='md:w-4/5'>
+                At BookWaves, we’re all about sharing and discovering books with personal recommendations. Upload books you love and tell us why they’re special, or browse recommendations from other readers. It's a fun and easy way to find your next favorite read!
+                </p>
     <div>
       <form onSubmit={handleSearch}>
         <input 

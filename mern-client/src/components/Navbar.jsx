@@ -40,8 +40,8 @@ const Navbar = () => {
     const navItems = [
         {link:"Home", path:"/"},
         // {link:"About", path:"/about"},
-        {link:"Shop", path:"/shop"},
-        {link:"Sell Your Book", path:"/admin/dashboard"},
+        {link:"Recommendations", path:"/all-recommendations"},
+        {link:"Recommend a Book", path:"/admin/dashboard"},
         // {link:"Blog", path:"/blog"},
     ]
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
         <nav className={`py-4 lg:px-24 px-4 ${isSticky ? "sticky top-0 left-0 right-0 bg-blue-300" : ""}`}>
             <div className='flex justify-between items-center text-base gap-8'>
                 {/* {Logo} */}
-                <Link to="/" className='text-2xl font-bold text-blue-700 flex items-center gap-2'><FaReadme className='inline-block'/>Page Turners</Link>
+                <Link to="/" className='text-2xl font-bold text-blue-700 flex items-center gap-2'><FaReadme className='inline-block'/>BookWaves</Link>
 
                 {/* {Navigation Items (Large Device)} */}
                 <ul className='md:flex space-x-12 hidden'>

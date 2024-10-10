@@ -5,7 +5,7 @@ import {
 
 import App from "../App"
 import Home from "../home/home";
-import Shop from "../shop/Shop";
+import Shop from "../shop/All-Recommendations";
 import SingleBook from "../shop/SingleBook";
 import DashboardLayout from "../dashboard/DashboardLayout";
 import Dashboard from "../dashboard/Dashboard";
@@ -28,9 +28,13 @@ import SearchResult from "../searchresults/SearchResult";
             path: "/",
             element: <Home/>
         },
+        // {
+        //     path: "/shop",
+        //     element:<Shop/>
+        // },
         {
-            path: "/shop",
-            element:<Shop/>
+          path: "/all-recommendations",
+          element:<Shop/>
         },
         // {
         //   path: "/about",

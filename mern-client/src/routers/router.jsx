@@ -46,7 +46,7 @@ import SearchResult from "../searchresults/SearchResult";
           loader:({params}) => fetch(`https://book-store-application-dufr.onrender.com/book/${params.id}`)
         },
         {
-          path: "/search", // Add this route for search results
+          path: "/search",
           element: <SearchResult/>
         }
         

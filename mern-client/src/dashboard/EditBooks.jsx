@@ -12,7 +12,6 @@ const EditBooks = () => {
     "Fiction",
     "Non-Fiction",
     "Mystery",
-    "Graphic Novel",
     "Sci-Fi",
     "Horror",
     "Fantasy",

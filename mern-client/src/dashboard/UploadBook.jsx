@@ -8,7 +8,6 @@ const UploadBook = () => {
     "Fiction",
     "Non-Fiction",
     "Mystery",
-    "Graphic Novel",
     "Sci-Fi",
     "Horror",
     "Fantasy",
@@ -39,7 +38,7 @@ const UploadBook = () => {
     const description = form.description.value
     const title = form.title.value;
     const pdfURL = form.pdfURL.value
-    // const price = form.price.value
+    const price = form.price.value
     const uploadedBy = form.uploadedBy.value
 
     const bookObject = {

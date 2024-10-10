@@ -10,6 +10,7 @@ import Reviews from './Reviews'
 import BilalBooks from './book_recommendations/BilalBooks'
 import NyleBooks from './book_recommendations/NyleBooks'
 import RimshaBooks from './book_recommendations/RimshaBooks'
+import MaryamBooks from './book_recommendations/MaryamBooks'
 
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
       <BilalBooks/>
       <NyleBooks/>
       <RimshaBooks/>
+      <MaryamBooks/>
 
       <FavouriteBooks/>
       

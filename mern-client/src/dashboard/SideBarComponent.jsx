@@ -22,10 +22,10 @@ const SideBarComponent = () => {
 
       <Sidebar.Items>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="book-store-application-self.vercel.app/admin/dashboard" icon={HiChartPie}>
+          <Sidebar.Item href="/admin/dashboard" icon={HiChartPie}>
             Dashboard
           </Sidebar.Item>
-          <Sidebar.Item href="book-store-application-self.vercel.app/admin/dashboard/upload" icon={HiOutlineCloudUpload}>
+          <Sidebar.Item href="/admin/dashboard/upload" icon={HiOutlineCloudUpload}>
             Upload Book
           </Sidebar.Item>
           <Sidebar.Item href="/admin/dashboard/manage" icon={HiInbox}>

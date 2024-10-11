@@ -6,8 +6,15 @@ function Shop() {
   const [books,setBooks] = useState([])
 
   useEffect(() => {
-    fetch("https://book-store-application-dufr.onrender.com/all-books").then(res => res.json()).then(data => setBooks(data));
-  },[])
+    fetch("https://book-store-application-dufr.onrender.com/all-books")
+      .then(res => res.json())
+      .then(data => {
+        // Shuffle the array randomly
+        const shuffledBooks = data.sort(() => Math.random() - 0.5);
+        // Set the shuffled books in state
+        setBooks(shuffledBooks);
+      });
+  }, []);
 
   return (
     <div className='mt-28 px-4 lg:px24'>

@@ -53,7 +53,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-        <h2 className='mb-8 text-3xl font-bold text-center mb-20 mt-20'>In Order to Sell Books, You Need to Login</h2>
+        <h2 className='mb-8 text-3xl font-bold text-center mb-20 mt-20'>In Order to Recommend Books, You Need to Login</h2>
 
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
             <div

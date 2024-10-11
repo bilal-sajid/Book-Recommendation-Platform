@@ -6,6 +6,8 @@ import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import FooterComp from './components/FooterComp'
 
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -15,6 +17,7 @@ function App() {
     <Navbar />
 
     <div className='min-h-screen'>
+      <Analytics />
       <Outlet/>
     </div>
     

@@ -13,7 +13,7 @@ function Shop() {
     <div className='mt-28 px-4 lg:px24'>
       <h2 className='text-5xl font-bold text-center'> All Recommended Books</h2>
 
-      <div className='grid gap-8 my-12 lg:grid-cols-4 sm:grid-cols-2 md: grid-cols-3 grid-cols-1'>
+      <div className='grid gap-8 my-12 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-3 grid-cols-1'>
         {
           books.map(book => <Card className="max-w-sm mx-auto" key={book._id}>
             <div className='flex justify-center'>

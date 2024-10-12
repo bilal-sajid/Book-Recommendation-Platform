@@ -49,7 +49,7 @@ const Banner = () => {
 
       <div className="mt-10 justify-center">
         <h1 className="w-1/2 text-center bg-blue-100 text-blue-800 p-4 rounded-lg shadow-lg">
-          If the page hasn't fully loaded, please wait a few minutes. We're gathering all the best book recommendations for you, and they'll appear shortly! Thank you for your patience. 😊
+          If the page hasn't fully loaded, please wait a few minutes. We're gathering all the best book recommendations for you, and they'll appear within a minute! Thank you for your patience. 😊
         </h1>
       </div>
 

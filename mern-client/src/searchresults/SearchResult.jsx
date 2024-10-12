@@ -62,7 +62,10 @@ const SearchResult = () => {
       }
     </div>
       ) : (
-        <h2 className='text-5xl font-semi-bold text-center mt-16'> No One Has Recommended This Book Yet</h2>
+        <div className="">
+        <h2 className='text-4xl font-semi-bold text-center mt-40'> No One Has Recommended This Book Yet</h2>
+        <h2 className='text-4xl font-bold text-center mt-16'> Be the First!</h2>
+        </div>
       )}
 
     </div>

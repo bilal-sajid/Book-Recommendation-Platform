@@ -12,7 +12,7 @@
 </ul>
 
 
-<h2>Why This Application is Helpful</h2>
+<h2>How You Can Use This Platform</h2>
 <p>
     This platform began as a way for friends to share book recommendations but has expanded to a broader community. It provides a dedicated space for users to share meaningful book suggestions, discover new reads from like-minded individuals, and keep track of books recommended by trusted sources. By centralizing recommendations in one platform, it simplifies the process of finding and suggesting quality books, enhancing the reading experience for a larger audience.
 </p>

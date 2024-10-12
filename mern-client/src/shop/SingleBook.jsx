@@ -22,7 +22,7 @@ const SingleBook = () => {
         <div className="w-full flex justify-center mt-8">
         <a href={pdfURL} target="_blank" rel="noopener noreferrer">
           <button className="bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition-all duration-300 transform hover:scale-105">
-            Check out '{title}' on Amazon
+            Check out '{title}' on Goodreads
           </button>
         </a>
         </div>

@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // Importing Images for the Banner (Right Side)
-import book1 from "../assets/banner-images/book1.jpg";
-import book2 from "../assets/banner-images/book2.jpg";
-import book3 from "../assets/banner-images/book3.jpg";
-import book4 from "../assets/banner-images/book4.jpg";
-import book5 from "../assets/banner-images/book5.jpg";
+import book1 from "../../assets/banner-images/book1.jpg";
+import book2 from "../../assets/banner-images/book2.jpg";
+import book3 from "../../assets/banner-images/book3.jpg";
+import book4 from "../../assets/banner-images/book4.jpg";
+import book5 from "../../assets/banner-images/book5.jpg";
 
 // These books are displayed on the Banner (Right Side)
 const bookImages = [book1, book2, book3, book4, book5];

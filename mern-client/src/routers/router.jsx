@@ -9,10 +9,10 @@ import App from "../App"
 import Home from "../pages/home/home";
 
 // All Recommendations
-import Shop from "../pages/shop/All-Recommendations";
+import Shop from "../pages/all-recommendations/All-Recommendations";
 
 // Single Book
-import SingleBook from "../pages/shop/SingleBook";
+import SingleBook from "../pages/single-book/SingleBook";
 
 
 import DashboardLayout from "../dashboard/DashboardLayout";
@@ -43,7 +43,7 @@ import SearchResult from "../searchresults/SearchResult";
         // },
         {
           path: "/all-recommendations",
-          element:<Shop/>
+          element: <Shop/>
         },
         {
           path: "/book/:id",

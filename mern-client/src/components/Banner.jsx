@@ -1,70 +1,79 @@
-import React, { useState } from 'react'
-import BannerCard from '../home/BannerCard'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Banner = () => {
+// Importing Images for the Banner (Right Side)
+import book1 from "../assets/banner-images/book1.jpg";
+import book2 from "../assets/banner-images/book2.jpg";
+import book3 from "../assets/banner-images/book3.jpg";
+import book4 from "../assets/banner-images/book4.jpg";
+import book5 from "../assets/banner-images/book5.jpg";
 
-    const [searchTerm, setSearchTerm] = useState('');
-    const navigate = useNavigate();
-  
-    const handleSearch = (e) => {
-      e.preventDefault();
-      // Navigate to the search page with the search term as a query parameter
-      if (searchTerm.trim()) {
-        navigate(`/search?q=${searchTerm}`);
-      }
-    };
+// These books are displayed on the Banner (Right Side)
+const bookImages = [book1, book2, book3, book4, book5];
+
+
+const Banner = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      navigate(`/search?q=${searchTerm}`);
+    }
+  };
 
   return (
-    <div className='px-4 lg:px-24 bg-teal-100 flex items-center'>
-        <div className='flex w-full flex-col md:flex-row justify-between items-center gap-12 py-40'>
+    <div className="px-6 lg:px-20 bg-gradient-to-r from-orange-50 to-yellow-100 flex items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-12 py-32 w-full">
+        
+        {/* Left Side - Main Content */}
+        <div className="md:w-1/2 space-y-8">
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-snug text-gray-800">
+            Discover & Share the <span className="text-orange-600">Books You Love</span>
+          </h2>
+          <p className="md:w-4/5 text-lg text-gray-700">
+            BookWaves is a cozy space where friends and family recommend books they love. Find hidden gems, share personal favorites, and make reading more meaningful together!
+          </p>
+          
+          {/* Search Bar */}
+          <form onSubmit={handleSearch} className="flex items-center bg-white shadow-md rounded-md overflow-hidden w-full max-w-md">
+            <input 
+              type="search" 
+              name="search" 
+              id="search" 
+              placeholder="Search for a book..."
+              className="py-2 px-3 flex-grow outline-none text-gray-700"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 transition-all duration-200">
+              Search
+            </button>
+          </form>
 
-            {/* {Left Side} */}
-            <div className='md:w-1/2 space-y-8 h-f'>
-                <h2 className='text-5xl font-bold leading-snug text-black'>
-                Share Your Favorite Reads {' '}
-                    <span className='text-blue-700'>
-                    and Why You Love Them!
-                    </span>
-                </h2>
-                <p className='md:w-4/5'>
-                At BookWaves, we’re all about sharing and discovering books with personal recommendations. Upload books you love and tell us why they’re special, or browse recommendations from other readers. It's a fun and easy way to find your next favorite read!
-                </p>
-    <div>
-      <form onSubmit={handleSearch}>
-        <input 
-          type="search" 
-          name="search" 
-          id="search" 
-          placeholder="Search a Book" 
-          className='py-2 px-2 rounded-s-sm outline-none'
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <button className='bg-blue-700 px-6 py-2 text-white font-medium hover:bg-black transition-all ease-in duration-200 ml-2'>
-          Search
-        </button>
-      </form>
-
-
-      <div className="mt-10 justify-center">
-        <h1 className="w-1/2 text-center bg-blue-100 text-blue-800 p-4 rounded-lg shadow-lg">
-          If the page hasn't fully loaded, please wait a few minutes. We're gathering all the best book recommendations for you, and they'll appear within a minute! Thank you for your patience. 😊
-        </h1>
-      </div>
-
-    </div>
-            </div>
-
-
-            {/* {Right Side} */}
-            <div>
-                <BannerCard></BannerCard>
-            </div>
-
+          {/* Loading Message */}
+          <div className="mt-6 text-center bg-orange-100 text-orange-800 p-4 rounded-lg shadow-lg max-w-md">
+            If the page takes a moment to load, don’t worry! Your personalized book recommendations will appear soon. Thanks for your patience! 😊
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Banner
+        {/* Right Side - Books Grid */}
+        <div className="md:w-1/2 flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
+          {bookImages.map((src, index) => (
+            <div key={index} className="shadow-lg transform rotate-[-5deg] hover:rotate-0 transition-transform duration-300">
+              <img 
+                src={src} 
+                alt={`Book ${index + 1}`} 
+                className="w-24 sm:w-28 md:w-32 lg:w-36 xl:w-40 h-auto object-contain rounded-md"
+              />
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default Banner;

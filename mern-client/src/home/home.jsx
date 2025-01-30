@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../components/Homepage/Banner'
+import Banner from '../components/Banner'
 import FavouriteBooks from './FavouriteBooks'
 
 // import BestSellerBooks from './BestSellerBooks'
@@ -17,11 +17,7 @@ import NooriyaBooks from './book_recommendations/NooriyaBooks'
 function Home() {
   return (
     <div>
-
       <Banner/>
-      {/* Done up to this point */}
-
-
       {/* <BestSellerBooks/> */}
 
       {/* All Recommendations */}

@@ -1,11 +1,10 @@
 import React from 'react'
 import Banner from '../components/Homepage/Banner'
-import FavouriteBooks from './FavouriteBooks'
 
 // import BestSellerBooks from './BestSellerBooks'
-import PromoBanner from './PromoBanner'
-import OtherBooks from './OtherBooks'
-import Reviews from './Reviews'
+import PromoBanner from '../components/Homepage/PromoBanner'
+import OtherBooks from '../components/Homepage/OtherBooks'
+
 
 // import BilalBooks from '../components/Homepage/Book-Recommendation-Components/BilalBooks'
 import NyleBooks from '../components/Homepage/Book-Recommendation-Components/NyleBooks'
@@ -18,7 +17,6 @@ function Home() {
   return (
     <div>
       <Banner/>
-      {/* <BestSellerBooks/> */}
 
       {/* All Recommendations */}
       <NyleBooks/>
@@ -27,11 +25,12 @@ function Home() {
       <RimshaBooks/>
       {/* <BilalBooks/> */}
       
-      {/* <FavouriteBooks/> */}
-      
-      <PromoBanner/>
       <OtherBooks/>
-      {/* <Reviews/> */}
+
+      {/* Call to Action */}
+      <PromoBanner/>
+      
+
     </div>
   )
 }

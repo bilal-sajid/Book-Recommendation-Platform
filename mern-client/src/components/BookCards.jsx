@@ -33,7 +33,7 @@ const BookCards = ({ headline, books }) => {
                         1024: { slidesPerView: 4, spaceBetween: 40 },
                     }}
                     modules={[Pagination]}
-                    className="w-full h-full pb-12"
+                    className="w-full h-full"
                 >
                     {books.map((book) => (
                         <SwiperSlide key={book._id} className="flex justify-center items-center">

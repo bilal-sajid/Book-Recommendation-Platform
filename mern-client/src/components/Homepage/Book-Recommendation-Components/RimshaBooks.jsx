@@ -17,7 +17,7 @@ const RimshaBooks = () => {
     }, []);
 
     return (
-        <section className="w-full px-6 lg:px-20 py-16 bg-orange-100">
+        <section className="w-full px-6 lg:px-20 py-8 bg-orange-100">
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800">
                     📚 Rimsha's Recommendations

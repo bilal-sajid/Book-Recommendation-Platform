@@ -26,9 +26,9 @@ const PromoBanner = () => {
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2 flex justify-center">
+        {/* <div className="md:w-1/2 flex justify-center">
           <img src={AwardBooksPicture} alt="Recommended Books" className="w-72 md:w-96 rounded-lg shadow-md" />
-        </div>
+        </div> */}
 
       </div>
     </div>

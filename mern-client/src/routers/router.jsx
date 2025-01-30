@@ -14,17 +14,22 @@ import Shop from "../pages/all-recommendations/All-Recommendations";
 // Single Book
 import SingleBook from "../pages/single-book/SingleBook";
 
-
+// Dashboard Related
 import DashboardLayout from "../dashboard/DashboardLayout";
 import Dashboard from "../dashboard/Dashboard";
 import UploadBook from "../dashboard/UploadBook";
 import ManageBooks from "../dashboard/ManageBooks";
 import EditBooks from "../dashboard/EditBooks";
+
+// Search Results
+import SearchResult from "../pages/searchresults/SearchResult";
+
+
 import Signup from "../components/Signup";
 import Login from "../components/Login";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Logout from "../components/Logout";
-import SearchResult from "../searchresults/SearchResult";
+
 
 
 
@@ -37,10 +42,6 @@ import SearchResult from "../searchresults/SearchResult";
             path: "/",
             element: <Home/>
         },
-        // {
-        //     path: "/shop",
-        //     element:<Shop/>
-        // },
         {
           path: "/all-recommendations",
           element: <Shop/>

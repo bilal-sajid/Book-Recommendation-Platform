@@ -49,8 +49,8 @@ const UploadBook = () => {
   };
 
   return (
-    <div className="px-6 py-12 bg-orange-50 min-h-screen flex flex-col items-center">
-      <div className="max-w-3xl w-full bg-white shadow-lg rounded-lg p-8">
+    <div className="flex-1 px-6 py-12 bg-orange-50">
+      <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-lg p-8">
         {/* Heading */}
         <h2 className="mb-4 text-3xl font-extrabold text-gray-800 text-center">📚 Upload a Book</h2>
         <p className="text-lg text-gray-700 text-center mb-6">

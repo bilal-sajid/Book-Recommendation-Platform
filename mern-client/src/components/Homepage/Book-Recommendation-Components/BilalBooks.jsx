@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import BookCards from '../../components/BookCards'
+import BookCards from '../../BookCards';
 
 
-const NyleBooks = () => {
+
+const BilalBooks = () => {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
@@ -11,16 +12,15 @@ const NyleBooks = () => {
       .then(res => res.json())
       .then(data => {
         // Filter books where uploadedBy is 'Bilal'
-        const bilalBooks = data.filter(book => book.uploadedBy === "Nyle");
+        const bilalBooks = data.filter(book => book.uploadedBy === "Bilal");
         // Set all the filtered books
         setBooks(bilalBooks);
       });
     }, [])
 
   return (
-    
-    <BookCards books={books} headline="Nyle's Recommendations" />
+    <BookCards books={books} headline="Bilal's Recommendations" />
   )
 }
 
-export default NyleBooks
+export default BilalBooks

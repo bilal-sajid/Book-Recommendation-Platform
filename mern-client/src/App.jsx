@@ -4,7 +4,6 @@
 import './App.css'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import FooterComp from './components/FooterComp'
 
 import { Analytics } from '@vercel/analytics/react';
 
@@ -21,7 +20,7 @@ function App() {
       <Outlet/>
     </div>
     
-    <FooterComp/>
+    {/* <FooterComp/> */}
     </>
   )
 }

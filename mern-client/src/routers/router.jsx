@@ -4,9 +4,17 @@ import {
   } from "react-router-dom";
 
 import App from "../App"
-import Home from "../home/home";
-import Shop from "../shop/All-Recommendations";
-import SingleBook from "../shop/SingleBook";
+
+// HomePage
+import Home from "../pages/home/home";
+
+// All Recommendations
+import Shop from "../pages/shop/All-Recommendations";
+
+// Single Book
+import SingleBook from "../pages/shop/SingleBook";
+
+
 import DashboardLayout from "../dashboard/DashboardLayout";
 import Dashboard from "../dashboard/Dashboard";
 import UploadBook from "../dashboard/UploadBook";
@@ -17,6 +25,7 @@ import Login from "../components/Login";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Logout from "../components/Logout";
 import SearchResult from "../searchresults/SearchResult";
+
 
 
   const router = createBrowserRouter([

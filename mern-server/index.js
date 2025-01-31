@@ -42,28 +42,14 @@ async function run() {
     // --- Create a Collection for the Database
     const bookCollections = client.db("BookInventory").collection("books");
 
-    // // --- Inserting a Single Book to the DB using POST Method
-    // app.post("/upload-book", async(req,res) => {
-    //   const data = req.body;
-    //   const result = await bookCollections.insertOne(data)
-    //   res.send(result);
-    // })
+    // --- Inserting a Single Book to the DB using POST Method
+    app.post("/upload-book", async(req,res) => {
+      const data = req.body;
+      const result = await bookCollections.insertOne(data)
+      res.send(result);
+    })
 
-    app.post("/upload-book", async (req, res) => {
-      try {
-        console.time("Book Upload Time"); // Start timing
     
-        const data = req.body;
-        const result = await bookCollections.insertOne(data);
-    
-        console.timeEnd("Book Upload Time"); // Log execution time
-    
-        res.status(201).send(result);
-      } catch (error) {
-        console.error("Error uploading book:", error);
-        res.status(500).send({ error: "Failed to upload book" });
-      }
-    });
 
     // -- Get a Single Book Data
     app.get("/book/:id", async(req,res) => {

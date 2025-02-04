@@ -43,11 +43,11 @@ function Shop() {
               {/* Book Cover */}
               <div className="h-72 flex justify-center bg-orange-50 transition-opacity duration-300 hover:opacity-90">
                 <Link to={`/book/${book._id}`}>
-                  <img 
-                    src={book.imageURL} 
-                    alt={book.title} 
-                    className="h-full w-auto object-contain"
-                  />
+                <img 
+                  src={book.imageURL} 
+                  alt={book.title} 
+                  className="h-full w-auto object-contain mx-auto"
+                />
                 </Link>
               </div>
 
